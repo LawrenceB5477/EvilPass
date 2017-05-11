@@ -29,13 +29,6 @@ public class PasswordGen {
     }
 
     /**
-     * Static method to ask the user for a selection
-     */
-    public static void select() {
-        System.out.print("Enter Selection [1-5]: ");
-    }
-
-    /**
      * Static method to get the password length, prevents negative input
      * @return Returns the length of the password to be generated, as an int.
      */
@@ -144,7 +137,7 @@ public class PasswordGen {
 
         // Processing
         while (running == true) {
-            select();
+            System.out.print("Enter Selection [1-5]: ");
             int selection = in.nextInt();
             if (selection == 1) {
                 length = length();
